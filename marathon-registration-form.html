@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Creating a marathon registration form exercise</title>
+  </head>
+  <body>
+  <h1>Race Registration!</h1>
+    <form action="/registrationDummy">
+      <p>
+        <label for="firstName">First name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter first name">
+      </p>
+      <p>
+        <label for="lastName">Last name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter last name">
+      </p>
+      <p>Select a Race:</p>
+      <div>
+        <input type="radio" name="race" id="run5k" value="fun">
+        <label for="run5k">Fun Run 5k</label>
+      </div>
+      <div>
+        <input type="radio" name="race" id="halfMarathon" value="half">
+        <label for="halfMarathon">Half Marathon</label>
+      </div>
+      <div>
+        <input type="radio" name="race" id="fullMarathon" value="full">
+        <label for="fullMarathon">Full Marathon</label>
+      </div>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Example@example.com">
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+      </p>
+      <p>
+        <label for="ageSelection">Select age group:</label>
+        <select name="ageSelection" id="ageSelection">
+          <option value="under18">Under 18</option>
+          <option value="under30">18 to 30</option>
+          <option value="above30">30 and up</option>
+        </select>
+      </p>
+      <button>Register!</button>
+    </form>
+  </body>
+</html>

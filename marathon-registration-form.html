@@ -7,14 +7,13 @@
   <body>
   <h1>Race Registration!</h1>
     <form action="/registrationDummy">
-      <p>
+      <div>
         <label for="firstName">First name:</label>
-        <input type="text" name="firstName" id="firstName" placeholder="Enter first name">
-      </p>
-      <p>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter first name" required>
+
         <label for="lastName">Last name:</label>
-        <input type="text" name="lastName" id="lastName" placeholder="Enter last name">
-      </p>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter last name" required>
+      </div>
       <p>Select a Race:</p>
       <div>
         <input type="radio" name="race" id="run5k" value="fun">
@@ -28,22 +27,22 @@
         <input type="radio" name="race" id="fullMarathon" value="full">
         <label for="fullMarathon">Full Marathon</label>
       </div>
-      <p>
+      <div>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Example@example.com">
-      </p>
-      <p>
+        <input type="email" name="email" id="email" placeholder="Example@example.com" required>
+
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter password">
-      </p>
-      <p>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+      </div>
+      <div>
         <label for="ageSelection">Select age group:</label>
         <select name="ageSelection" id="ageSelection">
           <option value="under18">Under 18</option>
-          <option value="under30">18 to 30</option>
-          <option value="above30">30 and up</option>
+          <option value="under30">18 to 29</option>
+          <option value="above30">30 to 49</option>
+          <option value="above50">50 and up</option>
         </select>
-      </p>
+      </div>
       <button>Register!</button>
     </form>
   </body>
